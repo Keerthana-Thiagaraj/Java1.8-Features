@@ -31,7 +31,7 @@ public class LEComparator {
         Collections.sort(toyList, (t1, t2) ->
                 {
 //                    return t1.name.compareTo(t2.name);
-                    return (int)t1.price - (int)t2.price;
+                    return (int) t1.price - (int) t2.price;
                 }
 
         );

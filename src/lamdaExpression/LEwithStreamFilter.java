@@ -31,11 +31,11 @@ public class LEwithStreamFilter {
 
         //** using lambda along with stream to filter data **//
 
-        Stream<ToyDetails> filteredToys= toyList.stream().filter(p->p.price>400);
+        Stream<ToyDetails> filteredToys = toyList.stream().filter(p -> p.price > 400);
 
-        filteredToys.forEach((details)->
+        filteredToys.forEach((details) ->
                 {
-                    System.out.println(details.id+""+details.name+""+details.price);
+                    System.out.println(details.id + "" + details.name + "" + details.price);
                 }
 
         );

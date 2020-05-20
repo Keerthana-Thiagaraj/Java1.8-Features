@@ -15,7 +15,7 @@ public class LEusingForEach {
 
         list.forEach(
 
-                (listValue)-> System.out.println(listValue)
+                (listValue) -> System.out.println(listValue)
         );
 
     }

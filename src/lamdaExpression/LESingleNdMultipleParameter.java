@@ -27,7 +27,7 @@ package lamdaExpression;
 //** lamda exp with multiple params **//
 
 interface Name1 {
-    int multiply(int a,int b);
+    int multiply(int a, int b);
 }
 
 public class LESingleNdMultipleParameter {
@@ -35,12 +35,12 @@ public class LESingleNdMultipleParameter {
 
     public static void main(String[] args) {
 
-        Name1 nameObj = (a,b) -> {
+        Name1 nameObj = (a, b) -> {
 
-            return (a*b);
+            return (a * b);
 
         };
-        System.out.println("value is "+nameObj.multiply(2,2));
+        System.out.println("value is " + nameObj.multiply(2, 2));
 
     }
 

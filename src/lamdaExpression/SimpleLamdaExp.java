@@ -74,9 +74,9 @@ public class SimpleLamdaExp {
 
     public static void main(String[] args) {
 
-        Name nameObj= ()->{
+        Name nameObj = () -> {
 
-                System.out.println("Name is keerthana");
+            System.out.println("Name is keerthana");
 
         };
         nameObj.name();

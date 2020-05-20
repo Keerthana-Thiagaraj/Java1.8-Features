@@ -18,12 +18,12 @@ public class LEThread {
     //** With lambda**/
     public static void main(String[] args) {
 
-        Runnable r = ()-> {
+        Runnable r = () -> {
 
-                System.out.println("running thread using lambda");
+            System.out.println("running thread using lambda");
 
         };
-        Thread thread= new Thread(r);
+        Thread thread = new Thread(r);
         r.run();
     }
 }
