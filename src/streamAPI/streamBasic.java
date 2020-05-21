@@ -59,9 +59,9 @@ public class streamBasic {
 //        System.out.println("usage of collect"+ number.stream().distinct().collect(Collectors.toList()));
 
         List<toyInfo> toy = new ArrayList<toyInfo>();
-        toy.add(new toyInfo(1, 88.2, "barbie"));
-        toy.add(new toyInfo(2, 200.11, "jerry"));
-        toy.add(new toyInfo(3, 23.81, "jerry"));
+        toy.add(new toyInfo(1, 88.2, "barbieeee"));
+        toy.add(new toyInfo(2, 200.11, "jerrrrrrrrrrrrrrrrrry"));
+        toy.add(new toyInfo(3, 23.81, "jery"));
         toy.add(new toyInfo(4, 160.7, "marie"));
         toy.add(new toyInfo(5, 100.78, "pikacho"));
 
@@ -124,6 +124,20 @@ public class streamBasic {
 
         /** usage of reduce **/
 
+//        Here a stream reduces to single resultant value,
+//        for example, maximum, minimum, sum, product, etc. Reducing is the repeated process of combining all elements.
+//        egs:sum(), min(), max(), count() etc. are some examples of reduce operations
 
+
+        /**example to display longest length of the name**/
+        System.out.println("nameee" + toy.stream().reduce((p1, p2) -> p1.name.length() > p2.name.length() ? p1 : p2));
+
+
+        //** find the max of id using reduce **/
+
+        Integer val = toy.stream().map(p -> p.id).reduce(Integer.MAX_VALUE, (p1, p2) -> p1 < p2 ? p1 : p2);
+
+        System.out.println("COUNTING"+toy.stream().map(p -> p.name).collect(Collectors.counting()));
+        System.out.println("valuee" + val);
     }
 }
